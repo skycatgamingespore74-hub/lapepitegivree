@@ -4,57 +4,118 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>La Pépite Givrée - Installer l'App</title>
-<link href="https://fonts.googleapis.com/css2?family=Ovo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ovo&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <style>
-body{margin:0; background:white; font-family:'Ovo',serif; color:#121212;}
-.wrap{max-width:420px; margin:0 auto; padding:26px 18px 40px; background:white;}
-h1{font-size:20px; font-weight:400; text-align:center; margin:0 0 6px; letter-spacing:0.5px;}
-.sub{text-align:center; font-size:13px; opacity:.6; margin-bottom:24px;}
-.card{
-background:#FBFBF9; border:1px solid #F0EDE6; border-radius:18px;
-padding:14px; margin-bottom:12px; display:flex; gap:12px; align-items:center; text-align:left;
-}
-.card img{width:52px; height:52px; object-fit:contain; background:white; border-radius:12px; padding:6px; border:1px solid #F0EDE6;}
-.card b{display:block; font-size:14px; margin-bottom:2px;}
-.card span{font-size:13px; line-height:1.35; opacity:.75;}
-.btn{display:block; background:#121212; color:white; text-align:center; padding:16px; border-radius:999px; text-decoration:none; font-size:16px; margin-top:20px;}
-.warn{text-align:center; font-size:11px; margin-top:14px; opacity:.5; border:1px dashed #D9D9D9; padding:10px; border-radius:999px;}
+  :root{
+    --bg1:#f5fbff;
+    --bg2:#ffffff;
+    --accent:#1ea7d7; /* bleu glacier */
+    --muted:#6b6b6b;
+    --card:#ffffff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:linear-gradient(180deg,var(--bg1),var(--bg2)); font-family:'Poppins',"Ovo",serif; color:#0b1530; -webkit-font-smoothing:antialiased}
+  .wrap{max-width:520px; margin:28px auto; padding:26px; background:transparent}
+  .card-wrap{background:linear-gradient(180deg,rgba(255,255,255,0.9),rgba(255,255,255,0.95)); border-radius:20px; padding:18px; box-shadow:0 8px 24px rgba(20,40,60,0.06); border:1px solid rgba(30,30,60,0.03)}
+  header{display:flex; gap:12px; align-items:center; margin-bottom:8px}
+  .logo{width:58px;height:58px;border-radius:12px;background:linear-gradient(135deg,#fff,#eaf9ff);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(30,40,60,0.04);border:1px solid rgba(30,40,60,0.04)}
+  .logo img{width:40px;height:40px}
+  h1{font-size:20px; font-weight:600; margin:0}
+  .sub{text-align:left; font-size:13px; color:var(--muted); margin:4px 0 16px}
+
+  .steps{display:grid; gap:12px}
+  .step{
+    background:var(--card);
+    border-radius:14px;
+    padding:12px;
+    display:flex;align-items:center;gap:12px;
+    border:1px solid rgba(10,20,30,0.03);
+  }
+  .step .ill{
+    min-width:68px;min-height:68px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(30,167,215,0.06),rgba(30,167,215,0.02));
+  }
+  .step .ill img{width:48px;height:48px;object-fit:contain}
+  .step b{display:block;font-size:15px;margin-bottom:4px}
+  .step p{margin:0;color:var(--muted);font-size:13px;line-height:1.3}
+
+  .btn-install{display:inline-flex;align-items:center;gap:10px;justify-content:center;background:var(--accent);color:white;padding:14px 18px;border-radius:999px;text-decoration:none;font-weight:600;font-size:16px;margin:18px 0;box-shadow:0 10px 30px rgba(30,167,215,0.18);border:1px solid rgba(255,255,255,0.12)}
+  .btn-install svg{filter:drop-shadow(0 6px 18px rgba(0,0,0,0.08))}
+  .meta{text-align:center;font-size:12px;color:var(--muted);margin-top:6px}
+  .warn{margin-top:12px;text-align:center;font-size:12px;color:#b33}
+
+  @media (max-width:480px){.wrap{padding:18px} .logo{width:52px;height:52px}.step .ill{min-width:60px;min-height:60px}}
 </style>
 </head>
 <body>
 <div class="wrap">
+  <div class="card-wrap">
+    <header>
+      <div class="logo" aria-hidden="true">
+        <img src="https://raw.githubusercontent.com/skycatgamingespore74-hub/lapepitegivree/5d3566f2b5adc8dfd3f4d58612583c06cdb7cce0/logo.png" alt="logo La Pépite Givrée" onerror="this.style.display='none'">
+      </div>
+      <div>
+        <h1>❄️ La Pépite Givrée — Installer l'application</h1>
+        <div class="sub">Guide simple pour télécharger et installer l'APK en toute sécurité</div>
+      </div>
+    </header>
 
-<h1>❄️ découvrez l'application de la Pépite Givrée ❄️</h1>
-<p class="sub">installer notre application gratuitement</p>
+    <div class="steps">
+      <div class="step">
+        <div class="ill"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4e5.svg" alt="Télécharger"></div>
+        <div>
+          <b>Étape 1 — Télécharger</b>
+          <p>Tape sur le bouton "Installer l'APK" pour récupérer le fichier. Le téléchargement démarre depuis lapepitegivree.fr.</p>
+        </div>
+      </div>
 
-<div class="card">
-<img src="https://cdn-icons-png.flaticon.com/512/724/724933.png" alt="Etape 1">
-<div><b>Étape 1 - Télécharger</b><span>Récupère le fichier .apk depuis le bouton ci-dessous. Vérifié et sécurisé.</span></div>
-</div>
+      <div class="step">
+        <div class="ill"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f512.svg" alt="Autoriser"></div>
+        <div>
+          <b>Étape 2 — Autoriser l'installation</b>
+          <p>Ouvre Paramètres → Applications → Installer des applications inconnues, et autorise Chrome (ou ton navigateur).</p>
+        </div>
+      </div>
 
-<div class="card">
-<img src="https://cdn-icons-png.flaticon.com/512/157/157088.png" alt="Etape 2">
-<div><b>Étape 2 - Autoriser Chrome</b><span>Ouvre Paramètres > Sécurité > Autoriser l'installation d'apps inconnues depuis Chrome.</span></div>
-</div>
+      <div class="step">
+        <div class="ill"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4bb.svg" alt="Installer"></div>
+        <div>
+          <b>Étape 3 — Installer</b>
+          <p>Ouvre le fichier .apk téléchargé, confirme l'installation puis appuie sur "Ouvrir" pour lancer l'application.</p>
+        </div>
+      </div>
 
-<div class="card">
-<img src="https://cdn-icons-png.flaticon.com/512/148/148767.png" alt="Etape 3">
-<div><b>Étape 3 - Installer</b><span>Ouvre le .apk téléchargé → Installer → Ouvrir. L'app est sur ton écran.</span></div>
-</div>
+      <div class="step">
+        <div class="ill"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f514.svg" alt="Notifications"></div>
+        <div>
+          <b>Étape 4 — Autoriser les notifications</b>
+          <p>Active les notifications pour recevoir les nouveautés et offres spéciales.</p>
+        </div>
+      </div>
 
-<div class="card">
-<img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Etape 4">
-<div><b>Étape 4 - Notifications</b><span>Active les notifications pour recevoir des nouveautés.</span></div>
-</div>
+      <div class="step">
+        <div class="ill"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2728.svg" alt="Prêt"></div>
+        <div>
+          <b>Étape 5 — C'est prêt !</b>
+          <p>Retrouve La Pépite Givrée sur ton écran d'accueil et profite de l'expérience.</p>
+        </div>
+      </div>
+    </div>
 
-<div class="card">
-<img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" alt="Etape 5">
-<div><b>Étape 5 - C'est prêt !</b><span>Retrouve La Pépite Givrée en 1 clic.</span></div>
-</div>
+    <div style="text-align:center">
+      <a class="btn-install" href="https://lapepitegivree.fr/lapepite.apk" download="lapepitegivree.apk" rel="noopener noreferrer" aria-label="Télécharger l'APK de La Pépite Givrée">
+        <!-- download icon -->
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 3v10" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M8 11l4 4 4-4" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21 21H3" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Installer l'APK
+      </a>
+      <div class="meta">Fichier signé et hébergé sur lapepitegivree.fr • Taille approximative : 25–45 Mo</div>
+      <div class="warn">⚠️ L'application n'est pas disponible sur les stores officiels. Télécharge uniquement depuis ce site.</div>
+    </div>
 
-<a href="https://lapepitegivree.fr/lapepite.apk" class="btn">installer</a>
-<div class="warn">⚠️ n'est pas disponible dans les stores ⚠️</div>
-
+  </div>
 </div>
 </body>
 </html>
